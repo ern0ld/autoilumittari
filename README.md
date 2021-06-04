@@ -5,11 +5,11 @@ Tehtävänäsi on toteuttaa autoilumittari-sovellus. Sovelluksen tulee pystyä s
 ## Aloitus ja käyttö
 
 Web-käyttöliittymä löytyy osoitteesta https://ern0ld.github.io/autoilumittari/.
-* Valitse Auto alasvetovalikosta. 
+* Valitse Auto alasvetovalikosta 
 * Syötä Matkustettava etäisyys
 * Syötä Nopeus 1
 * Syötä Nopeus 2
-* Klikkaa laske
+* Klikkaa Laske
 
 ## Tekniikat ja työkalut
 
