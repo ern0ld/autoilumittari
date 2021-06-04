@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, 
+    maximum-scale=1.0, user-scalable=no">
+
+
+<meta charset="UTF-8">
+
+<link rel="stylesheet" href="style.css">
+  </head>
+    <body>
+      <div id="alldiv">
+      <div id="titlediv">
+        <h1>Autoilumittari</h1>
+        <br><br>
+      </div>
+
+      <div id="optiondiv">
+  <label for="cars">Valitse auto:</label>
+  <select name="cars" id="cars">
+    <option value="carA">Auto A</option>
+    <option value="carB">Auto B</option>
+    <option value="carC">Auto C</option>
+  </select>
+
+  <br><br>
+  <br><br>
+<diV id="distancediv">
+<label for="dist">Matkustettava etäisyys: </label>
+<input type="number" id="dist"> <label> km</label>
+</diV>
+</br>
+</br>
+
+<label for="speed">Ilmoita nopeus 1:</label>
+<input type="number" id="speed1"> <label> (km/h)</label>
+
+</br>
+</br>
+
+<label for="speed">Ilmoita nopeus 2:</label>
+<input type="number" id="speed2"><label> (km/h)</label>
+
+</br>
+</br>
+
+<button id="count">Laske</button>
+
+</br>
+</br>
+</div>
+
+
+<div id="resultdiv" hidden=true>
+<h4 id="resulttime1"></h3>
+<h4 id="resultgas1"></h3>
+</br>
+<h4 id="resulttime2"></h3>
+<h4 id="resultgas2"></h3>
+</br>
+<h4 id="resultdifftime"></h3>
+<h4 id="resultdiffgas"></h3>
+</div>
+</div>
+    </body>
+    <script src="app.js"></script>
+</html>

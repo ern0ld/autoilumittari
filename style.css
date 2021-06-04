@@ -1,0 +1,68 @@
+
+body{
+    background-image: url('road.jpg');
+    background-repeat: no-repeat;
+background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+h1{
+    color: black;
+}
+
+#alldiv{
+    width: 100%;
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #000; /* Fallback for older browsers */
+    color: rgba(0, 0, 0, 0.75);
+    
+}
+
+#count{
+    display:inline-block;
+    padding:0.3em 1.2em;
+    margin:0 0.3em 0.3em 0;
+    border-radius:2em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    font-weight:300;
+    color:#FFFFFF;
+    background-color:black;
+    text-align:center;
+    transition: all 0.2s;
+    }
+    #count:hover{
+    color:#000000;
+    background-color:#FFFFFF;
+    }
+
+    #distancediv{
+        text-align: left;
+    }
+
+@media only screen and (min-width: 600px){
+    
+    #resultdiv{
+      
+        color: rgba(14, 13, 13, 0.9);
+    }
+    }
+
+
+    @media only screen and (max-width: 600px){
+
+        #alldiv{
+            text-align: center;
+            font-size: 16px;
+            font-weight: bold;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: #000; /* Fallback for older browsers */
+            color: rgba(0, 0, 0, 0.75);
+            
+        }
+    
+    }
