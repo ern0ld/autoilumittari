@@ -37,10 +37,10 @@ function getGasStuff(usage1, currDist, firstSpeed, secondSpeed){
         usage2 *= 1.009;
     }
 
-    var gasUsed1 = currDist/100*usage1;
-    var gasUsed2 = currDist/100*usage2;
+    let gasUsed1 = currDist/100*usage1;
+    let gasUsed2 = currDist/100*usage2;
     
-    var gasDiff = gasUsed1 > gasUsed2 ? gasUsed1 -gasUsed2 :  gasUsed2 -gasUsed1;
+    let gasDiff = gasUsed1 > gasUsed2 ? gasUsed1 -gasUsed2 :  gasUsed2 -gasUsed1;
     gasUsed1 = gasUsed1.toFixed(4);
     gasUsed2 = gasUsed2.toFixed(4);
     gasDiff = gasDiff.toFixed(4);
@@ -61,8 +61,6 @@ function getTimeStuff(first, second, dist){
     let roundedFirstHour = Math.floor(totalTimeFirst);
     let totalMinuteFirst = (totalTimeFirst-roundedFirstHour)*60;
     let roundedFirstMin = Math.floor(totalMinuteFirst);
-    console.log("ilman pyöristystä " + totalMinuteFirst);
-    console.log("pyöristetty " + roundedFirstMin);
     let roundedFirstSec =  Math.round((totalMinuteFirst-roundedFirstMin)*60);
     if(roundedFirstSec === 60){
         roundedFirstMin +=1;
@@ -122,8 +120,8 @@ function addResult(timeResult, gasResult){
     let cleanedResult = cleanResult(timeResult);
     document.getElementById("resulttime1").innerHTML = cleanedResult.first;
     document.getElementById("resulttime2").innerHTML = cleanedResult.second;
-    document.getElementById("resultgas1").innerHTML ="Käytetty polttoaine ensimmäisellä nopeudella: " + gasResult.gas1 + " litraa";
-    document.getElementById("resultgas2").innerHTML = "Käytetty polttoaine toisella nopeudella: " + gasResult.gas2 + " litraa";
+    document.getElementById("resultgas1").innerHTML ="Nopeus 1 - Käytetty polttoaine: " + gasResult.gas1 + " litraa";
+    document.getElementById("resultgas2").innerHTML = "Nopeus 2 - Käytetty polttoaine: " + gasResult.gas2 + " litraa";
     document.getElementById("resultdifftime").innerHTML = "Polttoainetta kului " + gasResult.diff + " litraa enemmän";
     document.getElementById("resultdiffgas").innerHTML = cleanedResult.total;
     resultDiv.hidden = false;
@@ -136,11 +134,11 @@ function cleanResult(timeResult){
 
     let speed1TimeHour = timeResult.first.hour > 0 ? timeResult.first.hour + " h " : "";
     let speed1TimeMinute = timeResult.first.minute > 0 ? timeResult.first.minute + " min " : "";
-    let speed1TotalTime = "Käytetty aika ensimmäisellä nopeudella: " + speed1TimeHour + speed1TimeMinute + timeResult.first.second + " s";
+    let speed1TotalTime = "Nopeus 1 - Käytetty aika: " + speed1TimeHour + speed1TimeMinute + timeResult.first.second + " s";
 
     let speed2TimeHour = timeResult.second.hour > 0 ? timeResult.second.hour + " h " : "";
     let speed2TimeMinute = timeResult.second.minute > 0 ? timeResult.second.minute + " min " : "";
-    let speed2TotalTime = "Käytetty aika toisella nopeudella: " + speed2TimeHour + speed2TimeMinute + timeResult.second.second + " s";
+    let speed2TotalTime = "Nopeus 2 - Käytetty aika: " + speed2TimeHour + speed2TimeMinute + timeResult.second.second + " s";
 
 return {total : timeDiffResult, first : speed1TotalTime, second: speed2TotalTime};
 }
@@ -149,7 +147,7 @@ async function handleClick(currDist, firstSpeed, secondSpeed, usage1) {
 
     let promise = new Promise((resolve, reject) => {
         
-      setTimeout(() => resolve(validate(currDist, firstSpeed, secondSpeed)), 100)
+      setTimeout(() => resolve(validate(currDist, firstSpeed, secondSpeed)), 1)
     });
 
     let result = await promise; 
