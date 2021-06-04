@@ -11,10 +11,12 @@ Web-käyttöliittymä löytyy osoitteesta https://ern0ld.github.io/autoilumittar
 * Syötä Nopeus 2
 * Klikkaa laske
 
-## Tekniikat
+## Tekniikat ja työkalut
 
 * Pure JS
-* Single page application-tekniikka
+* Single page application-tekniikka. JS noutaa DOM:ista elementit id:n perusteella ja käyttäjän klikattua Laske-nappulaa tekee tarvittavat laskutoimitukset. Sisältää yksinkertaisen tarkastuksen käyttäjän syötteen oikeellisuudesta. JS Lisää tuloselementtien innerHTML:ksi lasketun tuloksen ja asettaa ne näkyviin. 
+* Käyttöjärjestelmä Windows 10
+* IDE Visual Studio Code
 
 ## Tekijä
 
