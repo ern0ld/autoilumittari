@@ -16,7 +16,6 @@ h1{
     font-size: large;
     font-weight: bold;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: #000; /* Fallback for older browsers */
     color: rgba(0, 0, 0, 0.75);
     
 }
@@ -40,29 +39,50 @@ h1{
     background-color:#FFFFFF;
     }
 
-    #distancediv{
-        text-align: left;
-    }
+   
 
-@media only screen and (min-width: 600px){
+@media only screen and (min-width: 800px){
     
     #resultdiv{
       
         color: rgba(14, 13, 13, 0.9);
+        width: 50%;
+        color: black;
+        float: inherit;
+        margin: 0 auto;
+        
+        background-color: #ffffff;
+        border: 1px solid black;
+        opacity: 0.8;
+          font-size: 16px;
+          
+         
+        
     }
+    div.transbox p {
+        margin: 5%;
+        font-weight: bold;
+        color: #000000;
+      }
     }
 
 
-    @media only screen and (max-width: 600px){
+    @media only screen and (max-width: 800px){
 
-        #alldiv{
-            text-align: center;
-            font-size: 16px;
-            font-weight: bold;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            color: #000; /* Fallback for older browsers */
-            color: rgba(0, 0, 0, 0.75);
+      
+        #resultdiv{
+      
+            color: rgba(14, 13, 13, 0.9);
+            width: 75%;
+            color: black;
+            float: inherit;
+            margin: 0 auto;
             
+            background-color: #ffffff;
+            border: 1px solid black;
+            opacity: 0.8;
+              font-size: 16px;
+              
         }
     
     }

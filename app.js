@@ -140,7 +140,7 @@ function cleanResult(timeResult){
 
     let speed2TimeHour = timeResult.second.hour > 0 ? timeResult.second.hour + " h " : "";
     let speed2TimeMinute = timeResult.second.minute > 0 ? timeResult.second.minute + " min " : "";
-    let speed2TotalTime = "Käytetty aika ensimmäisellä nopeudella: " + speed2TimeHour + speed2TimeMinute + timeResult.second.second + " s";
+    let speed2TotalTime = "Käytetty aika toisella nopeudella: " + speed2TimeHour + speed2TimeMinute + timeResult.second.second + " s";
 
 return {total : timeDiffResult, first : speed1TotalTime, second: speed2TotalTime};
 }
