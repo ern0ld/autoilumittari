@@ -122,8 +122,8 @@ function addResult(timeResult, gasResult){
     let cleanedResult = cleanResult(timeResult);
     document.getElementById("resulttime1").innerHTML = cleanedResult.first;
     document.getElementById("resulttime2").innerHTML = cleanedResult.second;
-    document.getElementById("resultgas1").innerHTML ="Käytetty polttoaine vaihtoehdossa yksi: " + gasResult.gas1 + " litraa";
-    document.getElementById("resultgas2").innerHTML = "Käytetty polttoaine vaihtoehdossa kaksi: " + gasResult.gas2 + " litraa";
+    document.getElementById("resultgas1").innerHTML ="Käytetty polttoaine ensimmäisellä nopeudella: " + gasResult.gas1 + " litraa";
+    document.getElementById("resultgas2").innerHTML = "Käytetty polttoaine toisella nopeudella: " + gasResult.gas2 + " litraa";
     document.getElementById("resultdifftime").innerHTML = "Polttoainetta kului " + gasResult.diff + " litraa enemmän";
     document.getElementById("resultdiffgas").innerHTML = cleanedResult.total;
     resultDiv.hidden = false;
